@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, "Helvetica Neue" , sans-serif;
+}
+
+.container{
+  max-width: 50rem;
+  padding: 1.5em;
+  margin:auto;
+}
+
+/*.container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}*/
+/*#DDD
+
+#F5F5F5
+
+#6495ED*/
+.container form fieldset{
+  padding: 1em;
+  background: #F5F5F5;
+  border : 1px solid #ddd;
+  font-size: 1rem !important;
+}
+
+.container form fieldset legend{
+  padding: .7em .5em;
+  background: #fff;
+  border : 1px solid #ddd;
+  font-size: 2rem !important;
+}
+
+.container form fieldset p{
+  margin: 1.5em 0 1em 0;
+}
+
+.container form fieldset input,
+.container form fieldset textarea,
+.container form fieldset button{
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: .7em 0;
+}
+
+.container form fieldset button {
+  margin: 1.5em 0;
+  background: #6495ED;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+    
+}
+
+@media only screen and (min-width:30rem) {
+
+  /*.container form fieldset  {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto auto ;
+    grid-area:
+    "lgd lgd"
+    "name email"
+    "msg msg"
+    "btn *";
+    }
+
+  .container form .name {
+    grid-template-areas: name;
+  }
+  */
+  .container form fieldset legend{
+    padding: 1em .7em;
+  }
+
+  .container form fieldset .full{
+    margin: 7em 0 0 0;
+  }
+
+  .container form .name {
+    float: left;
+    width: 48%;
+  }
+
+  .container form .email {
+    margin-left: 0;
+    width: 48%;
+    float: right;
+    }
+
+  .container form fieldset button {
+    width: 100px;
+    }
+
+}
+
+input#submit-button {
+    max-width: 300px;
+}
